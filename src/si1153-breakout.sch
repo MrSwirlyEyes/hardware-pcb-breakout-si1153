@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -362,8 +362,8 @@
 <wire x1="-0.525" y1="-0.25" x2="-0.525" y2="0.25" width="0.12" layer="51"/>
 <wire x1="-0.525" y1="0.25" x2="0.525" y2="0.25" width="0.12" layer="51"/>
 <wire x1="0.525" y1="0.25" x2="0.525" y2="-0.25" width="0.12" layer="51"/>
-<smd name="1" x="-0.4575" y="0" dx="0.5851" dy="0.6118" layer="1" thermals="no"/>
-<smd name="2" x="0.4575" y="0" dx="0.5851" dy="0.6118" layer="1" thermals="no"/>
+<smd name="1" x="-0.4575" y="0" dx="0.5851" dy="0.6118" layer="1"/>
+<smd name="2" x="0.4575" y="0" dx="0.5851" dy="0.6118" layer="1"/>
 <text x="0" y="0.635" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.635" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <wire x1="-0.95" y1="0.55" x2="-0.95" y2="-0.55" width="0.127" layer="39"/>
@@ -789,8 +789,8 @@
 <wire x1="-0.95" y1="-0.55" x2="0.95" y2="-0.55" width="0.127" layer="39"/>
 <wire x1="0.95" y1="-0.55" x2="0.95" y2="0.55" width="0.127" layer="39"/>
 <wire x1="0.95" y1="0.55" x2="-0.95" y2="0.55" width="0.127" layer="39"/>
-<smd name="1" x="-0.4825" y="0" dx="0.5351" dy="0.6" layer="1" thermals="no"/>
-<smd name="2" x="0.4825" y="0" dx="0.5351" dy="0.6" layer="1" thermals="no"/>
+<smd name="1" x="-0.4825" y="0" dx="0.5351" dy="0.6" layer="1"/>
+<smd name="2" x="0.4825" y="0" dx="0.5351" dy="0.6" layer="1"/>
 <text x="0" y="0.635" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.635" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
@@ -874,6 +874,24 @@
 <text x="0" y="0.2" size="0.5" layer="25" font="vector" ratio="10" rot="SR0" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.2" size="0.25" layer="27" font="vector" ratio="10" rot="SR0" align="top-center">&gt;VALUE</text>
 </package>
+<package name="RESC603X26N" urn="urn:adsk.eagle:footprint:25615215/1" locally_modified="yes">
+<description>Chip, 0.60 X 0.30 X 0.26 mm body
+&lt;p&gt;Chip package with body size 0.60 X 0.30 X 0.26 mm&lt;/p&gt;</description>
+<wire x1="0.3" y1="0.364" x2="-0.3" y2="0.364" width="0.12" layer="21"/>
+<wire x1="0.3" y1="-0.364" x2="-0.3" y2="-0.364" width="0.12" layer="21"/>
+<wire x1="0.3" y1="-0.15" x2="-0.3" y2="-0.15" width="0.12" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="-0.3" y2="0.15" width="0.12" layer="51"/>
+<wire x1="-0.3" y1="0.15" x2="0.3" y2="0.15" width="0.12" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="0.3" y2="-0.15" width="0.12" layer="51"/>
+<smd name="1" x="-0.34" y="0" dx="0.32" dy="0.3" layer="1"/>
+<smd name="2" x="0.34" y="0" dx="0.32" dy="0.3" layer="1"/>
+<text x="0" y="0.5" size="0.5" layer="25" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.5" size="0.25" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<wire x1="-0.65" y1="-0.4" x2="-0.65" y2="0.4" width="0.127" layer="39"/>
+<wire x1="-0.65" y1="0.4" x2="0.65" y2="0.4" width="0.127" layer="39"/>
+<wire x1="0.65" y1="0.4" x2="0.65" y2="-0.4" width="0.127" layer="39"/>
+<wire x1="0.65" y1="-0.4" x2="-0.65" y2="-0.4" width="0.127" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESC1005X35" urn="urn:adsk.eagle:package:2899165/1" locally_modified="yes" type="model">
@@ -909,6 +927,13 @@
 &lt;p&gt;AXIAL Resistor package with 6.6 mm pitch, 0.45 mm lead diameter, 3.4 mm body length and 1.9 mm body diameter&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="RESAD660W45L340D190B"/>
+</packageinstances>
+</package3d>
+<package3d name="RESC603X26N" urn="urn:adsk.eagle:package:25615214/1" type="model">
+<description>Chip, 0.60 X 0.30 X 0.26 mm body
+&lt;p&gt;Chip package with body size 0.60 X 0.30 X 0.26 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="RESC603X26N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1036,6 +1061,26 @@
 </technology>
 </technologies>
 </device>
+<device name="_SMD-0201_1/20W-5%" package="RESC603X26N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25615214/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/en/products/detail/yageo/AC0201JR-0710KL/5894883?s=N4IgTCBcDaIJoEEDiBmALCgDAYQCoFoA5AERAF0BfIA" constant="no"/>
+<attribute name="DISTPN" value="YAG3430CT-ND" constant="no"/>
+<attribute name="MFR" value="Yageo" constant="no"/>
+<attribute name="MPN" value="AC0201JR-0710KL" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="47KΩ" prefix="R" uservalue="yes">
@@ -1079,6 +1124,26 @@
 <attribute name="DISTPN" value="YAG3674CT-ND" constant="no"/>
 <attribute name="MFR" value="Yageo" constant="no"/>
 <attribute name="MPN" value="AC0603JR-0747KL" constant="no"/>
+<attribute name="VALUE" value="47K" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-0201_1/20W-5%" package="RESC603X26N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25615214/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/en/products/detail/yageo/RC0201JR-0747KL/1948954?s=N4IgTCBcDaIMwEYEFoAsB2A0gOQMIBVlsAREAXQF8g" constant="no"/>
+<attribute name="DISTPN" value="311-47KNCT-ND" constant="no"/>
+<attribute name="MFR" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0201JR-0747KL" constant="no"/>
 <attribute name="VALUE" value="47K" constant="no"/>
 </technology>
 </technologies>
